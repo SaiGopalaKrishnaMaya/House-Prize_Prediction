@@ -29,8 +29,8 @@ model.fit(x_train, y_train)
 
 joblib.dump(model, 'house_price_model.pkl')
 
-'''new_data = {'beds': 3, 'baths': 2.5, 'size': 1500}
+new_data = {'beds': 3, 'baths': 2.5, 'size': 1500}
 new_data_df = pd.DataFrame(new_data, columns=x.columns, index=[0])
 predicted_price = model.predict(new_data_df)
-print("Predicted price:", predicted_price)'''
+print("Predicted price:", predicted_price)
 

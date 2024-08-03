@@ -7,7 +7,7 @@ from django.http import HttpResponse
 
 def index(request):
     predicted_price = None
-    model_path = model_path = r'C:\Users\mayas\Downloads\House price prediction\vs\myproject\house_price_model.pkl'
+    model_path = model_path = r'house_price_model.pkl'
 
     if request.method == 'POST':
         form = HousePriceForm(request.POST)
